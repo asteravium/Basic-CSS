@@ -1,4 +1,87 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/*this is an id, best to use classes whenever possible rather than ids*/
+#the-one {
+  color: purple;
+}
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: Arial, Arial, Helvetica, sans-serif;
+  line-height: 1.5rem;
+}
+
+body {
+  background-color: lightgray;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-image: url("/img/gradient.png");
+  background-repeat: repeat-x;
+}
+.new-color {
+  color: cornflowerblue;
+  background-color: darkslateblue;
+}
 h1 {
   color: mediumpurple;
   background-color: lightblue;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+h1 {
+  color: lightcoral;
+  background-color: darkblue;
+}
+
+p {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: normal;
+  /*letter-spacing: -0.2rem;*/
+  word-spacing: 0.3rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  background-color: lightgray;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: red;
+  background-color: lightyellow;
+  text-decoration: underline;
+}
+
+a:active {
+  color: green;
+}
+
+.standard-box {
+  background-color: lightcyan;
+  width: 300px;
+  padding: 30px;
+  border: 20px solid mediumorchid;
+  margin: 30px;
+  box-sizing: content-box;
+}
+
+.border-box {
+  background-color: lightcyan;
+  width: 300px;
+  padding: 30px;
+  border-top: 20px solid mediumorchid;
+  margin: 30px;
 }
